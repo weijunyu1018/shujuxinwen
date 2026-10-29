@@ -33,22 +33,111 @@
     revealEls.forEach(function (el) { el.classList.add('in'); });
   }
 
-  /* ---------- 顶部进度条 & 头部样式 ---------- */
+  /* ---------- 顶部章节进度：目录 + 读数 ---------- */
   var header = document.getElementById('siteHeader');
-  var fill = document.getElementById('progressFill');
+  var track = document.getElementById('chapterTrack');
   var ticking = false;
 
-  function onScroll() {
-    var docH = document.documentElement.scrollHeight - window.innerHeight;
+  // 章节起点：与文中的 chapter-tag 一一对应
+  var CHAPTERS = [
+    ['cover', '封面', '从有托位到能入托'],
+    ['why', '第一章', '为什么需要托育'],
+    ['gap', '第二章', '供需矛盾'],
+    ['mismatch', '第三章', '错位之困'],
+    ['policy', '第四章', '普惠托育政策'],
+    ['effect-ch', '第五章', '普惠效果'],
+    ['method', '附录', '资料与方法']
+  ];
+
+  var segs = [], starts = [], ends = [], totalH = 1, lastCur = -1;
+
+  // 窄屏目录条可横向滚动：让当前章节始终停留在可见范围内
+  function followActive(i) {
+    if (!track || !segs[i] || track.scrollWidth <= track.clientWidth + 1) return;
+    var r = segs[i].el.getBoundingClientRect();
+    var tr = track.getBoundingClientRect();
+    var delta = 0;
+    if (r.left < tr.left + 12) delta = r.left - tr.left - 12;
+    else if (r.right > tr.right - 12) delta = r.right - tr.right + 12;
+    if (delta) track.scrollLeft += delta;
+  }
+
+  function layoutChapters() {
+    if (!track) return;
+    totalH = Math.max(1, document.documentElement.scrollHeight);
+    starts = CHAPTERS.map(function (c) {
+      var el = document.getElementById(c[0]);
+      return el ? el.getBoundingClientRect().top + window.pageYOffset : 0;
+    });
+    ends = starts.map(function (s, i) {
+      return i < starts.length - 1 ? Math.max(starts[i + 1], s + 1) : totalH;
+    });
+
+    if (!segs.length) {
+      CHAPTERS.forEach(function (c) {
+        var item = document.createElement('a');
+        item.className = 'ct-item';
+        item.href = '#' + c[0];
+        item.setAttribute('data-ch', c[0]);
+
+        var lbl = document.createElement('span');
+        lbl.className = 'ct-lbl';
+        var idx = document.createElement('span');
+        idx.className = 'ct-idx';
+        idx.textContent = c[1];
+        var name = document.createElement('span');
+        name.className = 'ct-name';
+        name.textContent = c[2];
+        lbl.appendChild(idx);
+        lbl.appendChild(name);
+
+        var barEl = document.createElement('span');
+        barEl.className = 'ct-bar';
+        var f = document.createElement('i');
+        f.className = 'ct-fill';
+        barEl.appendChild(f);
+
+        item.appendChild(lbl);
+        item.appendChild(barEl);
+        track.appendChild(item);
+        segs.push({ el: item, fill: f });
+      });
+    }
+    paintChapters();
+  }
+
+  function paintChapters() {
+    if (!segs.length) return;
     var y = window.pageYOffset || document.documentElement.scrollTop;
-    var pct = docH > 0 ? (y / docH) * 100 : 0;
-    fill.style.width = pct + '%';
+    var ref = y + window.innerHeight * 0.35;
+    if (y + window.innerHeight >= totalH - 2) ref = totalH;
+    var cur = 0;
+    for (var i = 0; i < starts.length; i++) { if (ref >= starts[i]) cur = i; }
+
+    segs.forEach(function (s, i) {
+      var done = i < cur;
+      var p = i === cur ? Math.min(1, Math.max(0, (ref - starts[i]) / (ends[i] - starts[i]))) : 0;
+      s.fill.style.width = (p * 100) + '%';
+      s.el.classList.toggle('done', done);
+      s.el.classList.toggle('active', i === cur);
+    });
+
+    if (cur !== lastCur) { lastCur = cur; followActive(cur); }
+  }
+
+  function onScroll() {
+    var y = window.pageYOffset || document.documentElement.scrollTop;
     header.classList.toggle('scrolled', y > 8);
+    paintChapters();
     ticking = false;
   }
+
   window.addEventListener('scroll', function () {
-    if (!ticking) { window.requestAnimationFrame(onScroll); ticking = true; }
+    if (!ticking) { ticking = true; window.requestAnimationFrame(onScroll); }
   }, { passive: true });
+  window.addEventListener('resize', function () { window.requestAnimationFrame(layoutChapters); });
+  window.addEventListener('load', layoutChapters);
+  layoutChapters();
   onScroll();
 
   /* ---------- 导航当前章节高亮 ---------- */
@@ -179,8 +268,8 @@
       '<circle cx="' + CX + '" cy="' + (CY - 34) + '" r="15" fill="none" stroke="#808B85" stroke-width="2"/>' +
       '<path d="M' + CX + ',' + (CY - 45) + ' V' + (CY - 34) + ' L' + (CX + 9) + ',' + (CY - 28) +
       '" fill="none" stroke="#16796F" stroke-width="2" stroke-linecap="round"/>' +
-      '<text x="' + CX + '" y="' + CY + 6 + '" text-anchor="middle" class="dc-main">点击扇区</text>' +
-      '<text x="' + CX + '" y="' + CY + 26 + '" text-anchor="middle" class="dc-sub">查看全天排程</text>';
+      '<text x="' + CX + '" y="' + CY + 6 + '" text-anchor="middle" class="dc-main">24小时</text>' +
+      '<text x="' + CX + '" y="' + CY + 26 + '" text-anchor="middle" class="dc-sub">全天排程</text>';
     svg.appendChild(centerDef);
 
     var centerAct = document.createElementNS(SVGNS, 'g');
@@ -668,7 +757,7 @@
         detail.innerHTML = '<p style="margin:0"><b>' + s.rank + ' · ' + s.name + '</b> ' + s.desc + '</p>';
       } else {
         rankEl.textContent = '';
-        nameEl.textContent = '点击扇区查看';
+        nameEl.textContent = '三项原因';
         detail.innerHTML = '<p class="hw-hint">点击扇区查看对应原因；三个扇区为等分示意，仅表排序，不代表提及比例。</p>';
       }
     }
@@ -743,11 +832,11 @@
         numEl.textContent = '89.5%';
         detail.innerHTML = '<p style="margin:0"><b>民办机构 89.5%</b>（2023年全国托育机构数量口径）——供给主体以民办机构为主，天平明显倾斜。</p>';
       } else if (act === 'other') {
-        numEl.textContent = '?';
-        detail.innerHTML = '<p style="margin:0"><b>其他 10.5%</b>，由100%减去89.5%得到；点击左侧民办机构盘查看占比。</p>';
+        numEl.textContent = '89.5%';
+        detail.innerHTML = '<p style="margin:0"><b>其他 10.5%</b>，由100%减去89.5%得到。</p>';
       } else {
-        numEl.textContent = '?';
-        detail.innerHTML = '<p class="hw-hint">天平向民办机构一侧倾斜；点击左盘查看占比。</p>';
+        numEl.textContent = '89.5%';
+        detail.innerHTML = '<p class="hw-hint">天平向民办机构一侧倾斜；点击盘面查看口径。</p>';
       }
     }
     Object.keys(pans).forEach(function (k) {
@@ -758,78 +847,6 @@
       g.addEventListener('focus', function () { hovered = k; render(); });
       g.addEventListener('blur', function () { hovered = null; render(); });
       g.addEventListener('keydown', function (e) {
-        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pinned = pinned === k ? null : k; render(); }
-      });
-    });
-    render();
-  })();
-
-  /* ---------- 运营数据双环形图 ---------- */
-  (function () {
-    var host = document.getElementById('twoDonut');
-    if (!host) return;
-    var fills = host.querySelectorAll('.donut-fill');
-    var INFO = {
-      cost: { num: '>75%', cap: '房租与人工 / 总收入' },
-      loss: { num: '约70%', cap: '亏损机构比例' }
-    };
-    var pinned = null, hovered = null;
-    function render() {
-      fills.forEach(function (f) {
-        var k = f.getAttribute('data-k');
-        var item = f.closest('.donut-item');
-        var num = item.querySelector('.donut-num');
-        var cap = item.querySelector('.donut-cap');
-        var act = (hovered === k || pinned === k);
-        item.classList.toggle('active', act);
-        if (act) { num.textContent = INFO[k].num; cap.textContent = INFO[k].cap; }
-        else { num.textContent = '?'; cap.textContent = ''; }
-      });
-    }
-    fills.forEach(function (f) {
-      var k = f.getAttribute('data-k');
-      f.addEventListener('mouseenter', function () { hovered = k; render(); });
-      f.addEventListener('mouseleave', function () { hovered = null; render(); });
-      f.addEventListener('click', function () { pinned = pinned === k ? null : k; render(); });
-      f.addEventListener('focus', function () { hovered = k; render(); });
-      f.addEventListener('blur', function () { hovered = null; render(); });
-      f.addEventListener('keydown', function (e) {
-        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pinned = pinned === k ? null : k; render(); }
-      });
-    });
-    render();
-  })();
-
-  /* ---------- 运营数据双环形图 ---------- */
-  (function () {
-    var host = document.getElementById('twoDonut');
-    if (!host) return;
-    var fills = host.querySelectorAll('.donut-fill');
-    var INFO = {
-      cost: { num: '>75%', cap: '房租与人工 / 总收入' },
-      loss: { num: '约70%', cap: '亏损机构比例' }
-    };
-    var pinned = null, hovered = null;
-    function render() {
-      fills.forEach(function (f) {
-        var k = f.getAttribute('data-k');
-        var item = f.closest('.donut-item');
-        var num = item.querySelector('.donut-num');
-        var cap = item.querySelector('.donut-cap');
-        var act = (hovered === k || pinned === k);
-        item.classList.toggle('active', act);
-        if (act) { num.textContent = INFO[k].num; cap.textContent = INFO[k].cap; }
-        else { num.textContent = '?'; cap.textContent = ''; }
-      });
-    }
-    fills.forEach(function (f) {
-      var k = f.getAttribute('data-k');
-      f.addEventListener('mouseenter', function () { hovered = k; render(); });
-      f.addEventListener('mouseleave', function () { hovered = null; render(); });
-      f.addEventListener('click', function () { pinned = pinned === k ? null : k; render(); });
-      f.addEventListener('focus', function () { hovered = k; render(); });
-      f.addEventListener('blur', function () { hovered = null; render(); });
-      f.addEventListener('keydown', function (e) {
         if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pinned = pinned === k ? null : k; render(); }
       });
     });
