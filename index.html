@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>从有托位到能入托 · 照护的距离 | 数据新闻</title>
 <meta name="description" content="托位总量跨过了规划线，家庭能否跨进托育园的门？——关于0—3岁普惠托育的数据新闻。">
-<link rel="stylesheet" href="style.css?v=20261009">
+<link rel="stylesheet" href="style.css?v=20261027e">
 </head>
 <body>
 
@@ -20,7 +20,7 @@
       <a href="#why">为何需要</a>
       <a href="#gap">供需矛盾</a>
       <a href="#mismatch">错位之困</a>
-      <a href="#policy">普惠之路</a>
+      <a href="#policy">普惠托育政策</a>
       <a href="#status">进展差距</a>
       <a href="#sources">资料来源</a>
     </nav>
@@ -28,7 +28,7 @@
       <span></span><span></span><span></span>
     </button>
   </div>
-  <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+  <nav class="chapter-track" id="chapterTrack" aria-label="章节导航"></nav>
 </header>
 
 <main>
@@ -103,8 +103,7 @@
 <!-- 1 照护人手不足 -->
 <section class="page-section">
   <div class="container narrow">
-    <p class="sec-eyebrow reveal">为什么需要托育 / 1</p>
-    <h2 class="sec-title reveal">照护人手不足</h2>
+    <h2 class="sec-title reveal">没有祖辈帮衬的家庭，43.1%表示有托育需求</h2>
     <p class="sec-sub reveal">找不到能够持续接班的人，是家庭寻找托育的第一种起点。</p>
     <p class="sec-para reveal">双职工的上班时间、单亲家长的工作安排，与婴幼儿需要持续照护的时间重叠；祖辈也可能异地居住、仍在工作，或因健康与体力难以全天照料。关键不只是“家里有几个人”，而是谁能每天稳定地在场。</p>
 
@@ -176,21 +175,20 @@
         </div>
       </div>
     </div>
-    <p class="chart-note reveal">图1 两类家庭中表示有托育需求的比例。2017年中国人口与发展研究中心文章介绍2016年调查。<sup>[15]</sup></p>
+    <p class="chart-note reveal"><b>图1｜祖辈参与与托育需求</b>　无祖辈参与照看的家庭中43.1%表示有托育需求，有祖辈参与的家庭为33.8%。<sup>[15]</sup><span class="note-src">数据来源：中国人口与发展研究中心（王晖），2017年文章介绍的调查；调查时间：2016年（具体起止未披露）；样本量：现有公开转述未披露（待核验）；调查范围：现有公开转述未披露（待核验）；统计口径：两类家庭中表示有托育需求的比例。2017年为文章发表时间，非调查时间。</span></p>
 
     <p class="sec-para reveal">“没有祖辈帮忙”与更高的托育需求相伴，但有祖辈参与的家庭中仍有三分之一左右表达需求。<sup>[15]</sup> 这说明托育既可以补上缺席的人手，也可以为已有的家庭照护提供替补。</p>
   </div>
 </section>
 
 <!-- 2 工作与发展需要 -->
-<section class="page-section alt-bg">
+<section class="page-section">
   <div class="container narrow">
-    <p class="sec-eyebrow reveal">为什么需要托育 / 2</p>
     <h2 class="sec-title reveal">工作与发展需要</h2>
     <p class="sec-sub reveal">有些家长需要托育，恰恰是为了从“没法工作”走到“能够工作”。</p>
     <p class="sec-para reveal">一位家长暂时没有上班，不代表家庭没有托育需求。产假结束后维持工作、求职面试、职业培训、继续学习与重新就业，都需要先找到可靠的照护安排。只统计已经就业的父母，会漏掉被照护责任挡在职场之外的人。</p>
 
-    <h3 class="chart-title reveal">照护需求极大影响重返职场</h3>
+    <h3 class="chart-title reveal">32.9%的全职母亲因无人照料中断就业</h3>
     <div class="hw-flow reveal" id="hwFlow">
       <svg class="hw-svg" viewBox="0 0 720 340" role="img" aria-label="家与工作之间的流向图：32.9%因无人照料中断就业从工作回到家中，75.5%愿在照护充足时从家中重返工作；箭头粗细对应比例大小">
         <!-- 上弧：工作 → 家（中断就业 32.9%，细） -->
@@ -230,7 +228,7 @@
       </svg>
       <div class="hw-detail" id="hwDetail"></div>
     </div>
-    <p class="chart-note reveal">图2 原文描述婴幼儿全职母亲：32.9%因无人照料中断就业；“这些全职母亲”中75.5%表达再就业意愿。<sup>[15]</sup></p>
+    <p class="chart-note reveal"><b>图2｜就业中断与再就业意愿</b>　32.9%因孩子无人照料中断就业；在原文所称“这些全职母亲”中，75.5%表达再就业意愿。<sup>[15]</sup><span class="note-src">数据来源：同图1；调查时间：2016年（具体起止未披露）；样本量：现有公开转述未披露（待核验）；调查范围：现有公开转述未披露（待核验）；统计口径：婴幼儿全职母亲子样本，75.5%的分母是该子样本而非全部母亲；再就业意愿不等于实际就业。</span></p>
 
     <div class="flow-chain reveal">
       <div class="flow-node beige">照护安排不稳定</div>
@@ -247,8 +245,7 @@
 <!-- 3 照护负担过重 -->
 <section class="page-section">
   <div class="container narrow">
-    <p class="sec-eyebrow reveal">为什么需要托育 / 3</p>
-    <h2 class="sec-title reveal">照护负担过重</h2>
+    <h2 class="sec-title reveal">44.1%希望减轻老人的照护负担</h2>
     <p class="sec-sub reveal">有人照看孩子，也可能需要换班、休息和分担。</p>
     <p class="sec-para reveal">照护不是一次性的“找个人带”，而是每天重复的喂养、安抚、清洁与陪伴。祖辈有自己的生活和健康需求，父母也可能同时照顾多个孩子或其他家人。半日托、临时托和计时托的价值，正在于让照护不必始终压在同一个人身上。</p>
 
@@ -265,18 +262,17 @@
         <small>2022年发表的跨地区研究<br>中，家长报告的机构照护理由。<sup>[16]</sup></small>
       </div>
     </div>
-    <p class="chart-note reveal">图3 右图研究总样本3842名家长，覆盖10个省级地区、12座城市；为多选理由。<sup>[15][16]</sup></p>
+    <p class="chart-note reveal"><b>图3｜减轻家庭照护负担的两项调查</b>　44.1%希望减轻老人照护负担；12.5%希望腾出时间办事或放松。两项来自不同调查，不能相加。<sup>[15][16]</sup><span class="note-src">左：同图1来源，2016年调查，样本量与调查范围未披露，口径为入托原因报告频次；右：Hong等，Frontiers in Psychology，2022年1月发表，调查时间未披露，总样本3842名家长，覆盖10个省级地区、12座城市，多项选择；两侧样本与地区不同。</span></p>
   </div>
 </section>
 
 <!-- 4 儿童发展期待 -->
-<section class="page-section alt-bg">
+<section class="page-section">
   <div class="container narrow">
-    <p class="sec-eyebrow reveal">为什么需要托育 / 4</p>
     <h2 class="sec-title reveal">儿童发展期待</h2>
     <p class="sec-sub reveal">托育也承载着对专业照护、同伴交往和适龄活动的期待。</p>
 
-    <h3 class="chart-title reveal">送托兼有发展与照护动机</h3>
+    <h3 class="chart-title reveal">65.9%希望专业机构起早教作用，57.3%因工作忙无暇照看</h3>
     <div class="bar-chart reveal">
       <div class="bar-row">
         <div class="bar-label">希望专业机构起到早教作用</div>
@@ -289,7 +285,7 @@
         <div class="bar-val orange">57.3%</div>
       </div>
     </div>
-    <p class="chart-note reveal">图4 宁波市统计局调查，共2000个成功样本，覆盖10个区县市。<sup>[17]</sup></p>
+    <p class="chart-note reveal"><b>图4｜送托的发展与照护动机</b>　65.9%希望专业机构起到早教作用，57.3%因工作忙没有时间照看孩子。<sup>[17]</sup><span class="note-src">数据来源：宁波市统计局《宁波市托育需求及托育服务满意度调查报告》；调查时间：未披露（报告于2024-08-07发布）；样本量：2000个成功样本；调查范围：宁波市10个区县市；统计口径：多项选择，两项比例不必相加为100%。</span></p>
 
     <h3 class="chart-title reveal">已入托家庭最常提及的三项原因</h3>
     <div class="pie-chart reveal" id="reasonPie">
@@ -320,22 +316,21 @@
           <text class="pie-lbl pie-lbl-dark" x="307" y="276">入园准备</text>
         </g>
         <text class="pie-center-rank" id="pieRank" x="360" y="164"></text>
-        <text class="pie-center-name" id="pieName" x="360" y="190">点击扇区查看</text>
+        <text class="pie-center-name" id="pieName" x="360" y="190">三项原因</text>
       </svg>
       <div class="hw-detail" id="pieDetail"></div>
     </div>
-    <p class="chart-note reveal">图5 定性排序图，三个扇区为等分示意，不代表提及比例。重庆研究2024年发表，总样本11727户，已入托子样本3537户。<sup>[8]</sup></p>
+    <p class="chart-note reveal"><b>图5｜已入托家庭最常提及的三项原因</b>　三项原因按原文排序；三个扇区等分，仅表示顺序，不代表提及比例。<sup>[8]</sup><span class="note-src">数据来源：郑静等《重庆市0~3岁婴幼儿托育需求及影响因素研究》，《现代预防医学》2024年；调查时间：2022年项目（论文2024年发表，具体起止未披露）；样本量：有效样本11727户，其中已入托子样本3537户；调查范围：重庆市；统计口径：已入托家庭对送托原因的主观排序，原文未给出各项比例。</span></p>
   </div>
 </section>
 
 <!-- ===== 供需矛盾 ===== -->
 <div class="chapter-tag reveal" id="gap"><div class="container"><span>第二章</span> 供需矛盾</div></div>
 
-<section class="page-section alt-bg">
+<section class="page-section">
   <div class="container narrow">
-    <p class="sec-eyebrow reveal">供需矛盾</p>
     <h2 class="sec-title reveal">空着的托位与送不进的孩子</h2>
-    <p class="sec-sub reveal">理解差距，先看清三个不同的分母。</p>
+    <p class="sec-sub reveal">理解差距，先看清需求与入托的不同分母。</p>
 
     <div class="gap-chart reveal" id="gapChart">
       <svg class="gap-svg" viewBox="0 0 720 400" role="img" aria-label="供需落差图：超过三成的3岁以下婴幼儿家庭有送托需求，而全国实际入托率仅7.86%，两者之间形成明显落差">
@@ -380,7 +375,7 @@
       <span><i class="dot teal"></i>实际使用 46.7%</span>
       <span><i class="dot gray"></i>未使用 53.3%</span>
     </div>
-    <p class="chart-note reveal">图6 图标四舍五入至整数，精确使用率为46.7%；未使用比例为100%−46.7%。来源：<sup>[6][7]</sup></p>
+    <p class="chart-note reveal"><b>图6｜全国托位使用率</b>　2023年每100个托位中约47个被使用，精确使用率46.7%；未使用比例53.3%由100%减得。<sup>[6][7]</sup><span class="note-src">数据来源：国务院《关于推进托育服务工作情况的报告》（2024-09-10）及法治日报相关报道；统计时点：2023年；统计范围：全国；统计口径：托位使用率（行政统计，不适用抽样样本量）；100个色块中47个填充，为46.7%的四舍五入显示。</span></p>
 
     <p class="sec-para reveal">需求存在、入托有限、机构有空位，这三件事可以同时成立。它们提示的不是一个简单的“再建多少间教室”的问题，而是服务能否与家庭预算、居住地点和照护安排匹配。</p>
   </div>
@@ -391,11 +386,10 @@
 
 <section class="page-section">
   <div class="container narrow">
-    <p class="sec-eyebrow reveal">供需错位 / 总览</p>
     <h2 class="sec-title reveal">想送托为何没有变成入托</h2>
     <p class="sec-sub reveal">价格、信任与适配条件，会共同筛选掉家庭无法使用的托位。</p>
 
-    <h3 class="chart-title reveal">找托育遇到困难的家长，首先卡在哪里</h3>
+    <h3 class="chart-title reveal">44.3%的家长首先卡在照护质量</h3>
     <div class="bar-chart reveal">
       <div class="bar-row">
         <div class="bar-label">照护质量</div>
@@ -423,7 +417,7 @@
         <div class="bar-val teal">6.8%</div>
       </div>
     </div>
-    <p class="chart-note reveal">图7 2022年研究图1，分母为报告找托育困难的1945名家长，问的是首要障碍；四舍五入合计99.9%。研究总样本3842。<sup>[16]</sup></p>
+    <p class="chart-note reveal"><b>图7｜找托育遇到的首要困难</b>　44.3%首先卡在照护质量，20.7%卡在可入托名额不足，15.5%卡在费用。<sup>[16]</sup><span class="note-src">数据来源：Hong等，Frontiers in Psychology，2022；调查时间：未披露；样本量：总样本3842名家长，本图分母为报告找托育困难的1945名家长；调查范围：10个省级地区、12座城市；统计口径：首要障碍单选，四舍五入合计99.9%。</span></p>
 
     <h3 class="chart-title reveal">同一个家庭，需要同时跨过这些门槛</h3>
     <div class="stair-chart reveal" id="stairChart">
@@ -480,20 +474,18 @@
       </svg>
       <div class="hw-detail" id="stairDetail"></div>
     </div>
-    <p class="chart-note reveal">图8 机制示意图。</p>
+    <p class="chart-note reveal"><b>图8｜家庭抵达托育园的五级门槛</b>　付得起、信得过、接得到、收得下、用得上，五项条件需同时满足。<span class="note-src">图为机制示意，根据正文所述五项适配条件整理，非实证调查，不对应具体样本、时间或地区。</span></p>
 
     <p class="sec-para reveal">供需错位不只意味着“数量少”，还意味着有需求的家庭与已有服务没有匹配上。地点或时间不合适时，一个空位也难以转化为一次实际照护。</p>
   </div>
 </section>
 
 <!-- ===== 价格 1 ===== -->
-<section class="page-section alt-bg">
+<section class="page-section">
   <div class="container narrow">
-    <p class="sec-eyebrow reveal">供需错位 / 价格</p>
-    <h2 class="sec-title reveal">托费之外还有一笔家庭账</h2>
-    <p class="sec-sub reveal">对家长而言，这是每月支出；对机构而言，这是维持照护服务的收入。</p>
+    <h2 class="sec-title reveal">实际月费比家庭可接受的月费高744.4元</h2>
+    <p class="sec-sub reveal">托费之外还有一笔家庭账：对家长而言是每月支出，对机构而言是维持照护服务的收入。</p>
 
-    <h3 class="chart-title reveal">实际月费与可接受月费之间差744.4元</h3>
     <div class="bar-chart reveal">
       <div class="bar-row">
         <div class="bar-label">已入托家庭生均月费用</div>
@@ -506,7 +498,7 @@
         <div class="bar-val teal">1,607.4元</div>
       </div>
     </div>
-    <p class="chart-note reveal">图9 多阶段分层随机抽样，有效问卷11727份；研究发表于2024年，数据源为2022年项目。<sup>[8]</sup></p>
+    <p class="chart-note reveal"><b>图9｜实际月费与可接受月费</b>　已入托家庭生均月费用2,351.8元，未入托家庭可接受月费用均值1,607.4元，相差744.4元。<sup>[8]</sup><span class="note-src">数据来源：同图5重庆研究；调查时间：2022年项目（论文2024年发表）；样本量：有效问卷11727份；调查范围：重庆市；统计口径：已入托家庭实际生均月费用与未入托家庭可接受月费用均值，两组家庭构成不同；多阶段分层随机抽样。</span></p>
 
     <p class="sec-para reveal">同一地区、不同家庭的两项均值相差744.4元，实际费用比可接受费用均值高约46.3%。这揭示了价格门槛，却不意味着每个家庭都只差这笔钱。</p>
 
@@ -522,7 +514,6 @@
 <!-- ===== 价格 2 ===== -->
 <section class="page-section">
   <div class="container narrow">
-    <p class="sec-eyebrow reveal">供需错位 / 价格</p>
     <h2 class="sec-title reveal">家庭预算并不跟着托费走</h2>
     <p class="sec-sub reveal">同样的收费，对不同收入家庭意味着不同的取舍。</p>
 
@@ -549,7 +540,7 @@
         <div class="bar-val orange">5.49%</div>
       </div>
     </div>
-    <p class="chart-note reveal">图10 2024年淮安问卷，n＝3168。前两个选项合计83.37%；区间沿用原问卷标签。<sup>[9]</sup></p>
+    <p class="chart-note reveal"><b>图10｜家庭可接受的月费区间</b>　83.37%的家庭可接受2000元及以下。<sup>[9]</sup><span class="note-src">数据来源：淮安市卫生健康委《淮安市3岁以下婴幼儿托育服务问卷调查结果反馈》；调查时间：未披露（结果于2024-09-20公布）；样本量：n=3168；调查范围：淮安市；统计口径：可接受月费区间占比，前两个选项合计83.37%，区间沿用原问卷标签。</span></p>
 
     <h3 class="chart-title reveal">情景测算：1978元月费占家庭月收入多少</h3>
     <div class="bar-chart reveal">
@@ -569,20 +560,19 @@
         <div class="bar-val teal">13.19%</div>
       </div>
     </div>
-    <p class="chart-note reveal">图11 固定用2023年全国平均服务费1978元（不含餐费）除以假设家庭月收入。<sup>[6][7]</sup></p>
+    <p class="chart-note reveal"><b>图11｜月费占家庭月收入的情景测算</b>　以1,978元/月测算，月收入5,000元时占39.56%，10,000元时占19.78%，15,000元时占13.19%。<sup>[6][7]</sup><span class="note-src">情景测算，非调查结果；固定值为2023年全国平均托育服务收费1,978元/月（不含餐费），来源同图6；5,000元、10,000元、15,000元为假设家庭月收入，不是实际收入分布。</span></p>
 
     <p class="sec-para reveal">普惠不能只看价格是否低于市场均价，还应看低收入家庭能否持续支付。评估时应把餐费、延时服务和接送支出一并纳入家庭账单。</p>
   </div>
 </section>
 
 <!-- ===== 运营 ===== -->
-<section class="page-section alt-bg">
+<section class="page-section">
   <div class="container narrow">
-    <p class="sec-eyebrow reveal">供需错位 / 运营</p>
-    <h2 class="sec-title reveal">家长嫌贵与机构亏损并存</h2>
+    <h2 class="sec-title reveal">约七成托育机构亏损，低收费与高成本如何平衡？</h2>
     <p class="sec-sub reveal">机构降价的空间，还受到房租、人手和收托人数的共同约束。</p>
 
-    <h3 class="chart-title reveal">2023年，供给主体以民办机构为主</h3>
+    <h3 class="chart-title reveal">2023年，89.5%的托育机构为民办</h3>
     <div class="scale-chart reveal" id="scaleChart">
       <svg class="scale-svg" viewBox="0 0 760 420" role="img" aria-label="天平示意图：左盘民办机构、右盘其他机构，天平明显向左倾斜；点击左盘查看民办机构占比">
         <!-- 支架（保持竖直） -->
@@ -600,7 +590,7 @@
             <line class="scale-rope" x1="90" y1="158" x2="90" y2="224"/>
             <path class="scale-dish" d="M8,226 L172,226 L162,264 Q90,278 18,264 Z"/>
             <text class="scale-name" x="90" y="300">民办机构</text>
-            <text class="scale-num" id="scaleNum" x="90" y="252">?</text>
+            <text class="scale-num" id="scaleNum" x="90" y="252">89.5%</text>
           </g>
           <!-- 右盘：其他（占10.5%，盘缩小） -->
           <g class="scale-pan scale-right" data-k="other" tabindex="0" role="button" aria-label="其他机构盘">
@@ -613,11 +603,11 @@
       </svg>
       <div class="hw-detail" id="scaleDetail"></div>
     </div>
-    <p class="chart-note reveal">图12 全国托育机构数量口径；"其他"由100%减去89.5%得到。<sup>[6]</sup></p>
+    <p class="chart-note reveal"><b>图12｜托育机构的民办与其他构成</b>　民办机构占89.5%，其他占10.5%。<sup>[6]</sup><span class="note-src">数据来源：国务院《关于推进托育服务工作情况的报告》（2024-09-10）；统计时点：2023年；统计范围：全国；统计口径：按机构数量计算，“其他”由100%−89.5%得到；行政统计，不适用抽样样本量。</span></p>
 
     <div class="two-donut reveal" id="twoDonut">
       <div class="donut-item">
-        <svg class="donut-svg" viewBox="0 0 200 200" role="img" aria-label="房租与人工占机构总收入超过75%的环形图，点击查看数值">
+        <svg class="donut-svg" viewBox="0 0 200 200" role="img" aria-label="房租与人工占机构总收入超过75%的环形图">
           <circle class="donut-bg" cx="100" cy="100" r="80"/>
           <circle class="donut-fill teal" cx="100" cy="100" r="80" style="--frac:.75"/>
           <text class="donut-num" x="100" y="96">超过75%</text>
@@ -626,7 +616,7 @@
         <p class="donut-label">房租与人工 / 机构总收入</p>
       </div>
       <div class="donut-item">
-        <svg class="donut-svg" viewBox="0 0 200 200" role="img" aria-label="处于亏损状态的机构比例约70%的环形图，点击查看数值">
+        <svg class="donut-svg" viewBox="0 0 200 200" role="img" aria-label="处于亏损状态的机构比例约70%的环形图">
           <circle class="donut-bg" cx="100" cy="100" r="80"/>
           <circle class="donut-fill orange" cx="100" cy="100" r="80" style="--frac:.70"/>
           <text class="donut-num" x="100" y="96">约70%</text>
@@ -635,7 +625,7 @@
         <p class="donut-label">处于亏损状态的机构比例</p>
       </div>
     </div>
-    <p class="chart-note reveal">图13 2024年国务院报告披露的运营状况，75%的分母是总收入。<sup>[6]</sup></p>
+    <p class="chart-note reveal"><b>图13｜机构成本与亏损面</b>　房租与人工合计占机构总收入75%以上，约七成机构亏损。<sup>[6]</sup><span class="note-src">数据来源：同图12国务院报告；统计时点：2023年；统计范围：全国；统计口径：房租与人工占总收入比重、亏损机构占比；75%的分母为机构总收入；行政统计，不适用抽样样本量。</span></p>
 
     <div class="cycle reveal" aria-label="运营反馈循环">
       <div class="cycle-node beige">固定开支难下降</div>
@@ -645,18 +635,17 @@
       <span class="cycle-ar a1">→</span><span class="cycle-ar a2">↓</span>
       <span class="cycle-ar a3">←</span><span class="cycle-ar a4">↑</span>
     </div>
-    <p class="chart-note reveal">图14 运营反馈机制示意图；空位会放大每名在托儿童分担固定开支的压力。</p>
+    <p class="chart-note reveal"><b>图14｜运营反馈循环</b>　空位会放大每名在托儿童分担固定开支的压力。<span class="note-src">机制示意图，非实证调查，不对应具体样本、时间或地区。</span></p>
   </div>
 </section>
 
 <!-- ===== 质量 ===== -->
 <section class="page-section">
   <div class="container narrow">
-    <p class="sec-eyebrow reveal">供需错位 / 质量</p>
     <h2 class="sec-title reveal">把孩子交出去之前</h2>
     <p class="sec-sub reveal">价格之外，家长还要判断：谁来照顾、一次照顾几个、照护能否稳定。</p>
 
-    <h3 class="chart-title reveal">安全是参与者最关注的因素</h3>
+    <h3 class="chart-title reveal">安全条件最受关注：72.79%的家长勾选</h3>
     <div class="bar-chart reveal">
       <div class="bar-row">
         <div class="bar-label">安全条件</div>
@@ -674,7 +663,7 @@
         <div class="bar-val teal">52.9%</div>
       </div>
     </div>
-    <p class="chart-note reveal">图15 淮安市卫健委2024年公布问卷结果，3168人参与；为多选因素。<sup>[9]</sup></p>
+    <p class="chart-note reveal"><b>图15｜家长最关注的机构条件</b>　安全条件72.79%、照护水平55.15%、卫生状况52.9%。<sup>[9]</sup><span class="note-src">数据来源：淮安市卫生健康委问卷结果反馈；调查时间：未披露（2024年公布）；样本量：3168人参与；调查范围：淮安市；统计口径：多项选择，比例不必相加为100%。</span></p>
 
     <h3 class="chart-title reveal">小月龄照护，需要更密集的人手</h3>
     <div class="ratio-cards reveal">
@@ -694,18 +683,17 @@
         <span class="ratio-icons"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
       </div>
     </div>
-    <p class="chart-note reveal">图16 保育人员与婴幼儿配比要求示意图。<sup>[10]</sup></p>
+    <p class="chart-note reveal"><b>图16｜保育人员与婴幼儿配比</b>　6—12月龄1:3，12—24月龄1:5，24—36月龄1:7。<sup>[10][25]</sup><span class="note-src">依据国家卫生健康委《托育机构设置标准（试行）》《托育机构管理规范（试行）》（2019-10-14）整理；图为配比要求示意，非调查数据。</span></p>
 
     <p class="sec-para reveal">婴幼儿月龄越小，所需照护人手越密集。扩建面向较大月龄的托班，不能自动解决产假结束后的低月龄照护。判断“托得好”，还需看到人员配置是否落实、卫生保健如何开展、家长反馈能否得到回应，而不只是机构挂了什么牌子。</p>
   </div>
 </section>
 
 <!-- ===== 照护特殊性 1 ===== -->
-<section class="page-section alt-bg">
+<section class="page-section">
   <div class="container narrow">
-    <p class="sec-eyebrow reveal">供需错位 / 照护特殊性 1</p>
     <h2 class="sec-title reveal">一天里，照护反复开始</h2>
-    <p class="sec-sub reveal">（四）婴幼儿托育的特殊性：把人员配比落实到每一次照护</p>
+    <p class="sec-sub reveal">人员配比要落实到每一次喂养、清洁、安抚与陪伴。</p>
     <p class="sec-para reveal">上一页的人员配比背后，是每天反复发生的喂养、清洁、安抚与陪伴。以健康、每日一次午睡的18月龄孩子为例，一名主要照护者需要在多种任务间持续切换。</p>
 
     <div class="rhythm reveal">
@@ -739,24 +727,21 @@
     </div>
 
     <h3 class="chart-title reveal">成人的一天：备餐、陪吃与收尾，穿插在陪伴之间</h3>
-    <p class="chart-note tight reveal">图16a 科学建议约束下的示例排程。圆环按一天24小时划分，点击扇区查看该时段安排。<sup>[19][20][23]</sup></p>
     <div class="day-donut reveal">
       <div class="donut-chart" id="dayDonut"></div>
       <div class="donut-panel" id="donutPanel"></div>
     </div>
-    <p class="chart-note reveal">本例留出午睡2小时与夜间11小时，共13小时睡眠机会；备餐、陪伴与家务可重叠，睡眠期间成人可以休息。具体时间、饮奶和夜间响应随孩子调整。</p>
+    <p class="chart-note reveal"><b>图16a｜18月龄孩子与照护者的一天</b>　示例排程，圆环按一天24小时划分。<sup>[19][20][23]</sup><span class="note-src">情景示例，依据WHO《5岁以下儿童身体活动、久坐行为和睡眠指南》及婴幼儿喂养指南编排，非调查数据。本例留出午睡2小时与夜间11小时，共13小时睡眠机会；备餐、陪伴与家务可重叠，睡眠期间成人可以休息。具体时间、饮奶和夜间响应随孩子调整。</span></p>
   </div>
 </section>
 
 <!-- ===== 照护特殊性 2 ===== -->
 <section class="page-section">
   <div class="container narrow">
-    <p class="sec-eyebrow reveal">供需错位 / 照护特殊性 2</p>
     <h2 class="sec-title reveal">月龄变了，照护也要重排</h2>
     <p class="sec-sub reveal">从频繁哺乳到学习自主进食，0—3岁不是同一种照护任务。</p>
 
     <h3 class="chart-title reveal">四个阶段，四种喂养重点</h3>
-    <p class="chart-note tight">图16b 以下为指南要求或典型频次。</p>
     <div class="stage-grid reveal">
       <div class="sg-card">
         <i class="sg-band c1"></i>
@@ -883,19 +868,19 @@
         <p>国内指南建议2—3岁每日3餐＋2次加餐；逐步独立进食。食物处理、餐前餐后清洁和进食看护仍需要成人参与。<sup>[19]</sup></p>
       </div>
     </div>
+    <p class="chart-note reveal"><b>图16b｜四个阶段的喂养重点</b>　0—5月龄、6—11月龄、12—23月龄、24—35月龄的喂养要求或典型频次。<sup>[19][21][22][23]</sup><span class="note-src">依据国家卫生健康委《婴幼儿营养喂养评估服务指南（试行）》、WHO婴幼儿喂养建议及CDC母乳喂养资料整理；为指南要求或典型频次示意，非调查数据。</span></p>
 
     <p class="sec-para reveal">喂养的难点也在“如何回应”。WHO建议照护者识别饥饿与饱足信号，及时、适当地回应，并有时间陪伴孩子进食。<sup>[23]</sup> 综上所述，小月龄的婴幼儿需要精细化、高频次的照料，相应的对照护者对职业素养要求也更加高。</p>
   </div>
 </section>
 
 <!-- ===== 信任 ===== -->
-<section class="page-section alt-bg">
+<section class="page-section">
   <div class="container narrow">
-    <p class="sec-eyebrow reveal">供需错位 / 信任</p>
     <h2 class="sec-title reveal">低价格还需要可核实的质量</h2>
     <p class="sec-sub reveal">家长难以在签约前完全判断，未来每一天的照护是否可靠。</p>
 
-    <h3 class="chart-title reveal">家庭选机构时看重什么</h3>
+    <h3 class="chart-title reveal">63.4%的家庭看重照护水平与服务质量</h3>
     <div class="bar-chart reveal">
       <div class="bar-row">
         <div class="bar-label">照护水平及服务质量</div>
@@ -923,14 +908,14 @@
         <div class="bar-val teal">16.8%</div>
       </div>
     </div>
-    <p class="chart-note reveal">图17 宁波2024年统计调查，总样本2000户；图示报告列出的多项考虑因素。<sup>[17]</sup></p>
+    <p class="chart-note reveal"><b>图17｜家庭选择托育机构的考虑因素</b>　63.4%考虑照护水平与服务质量，41.8%考虑收费标准，31.9%考虑接送距离。<sup>[17]</sup><span class="note-src">数据来源：同图4宁波市统计局调查报告；调查时间：未披露（报告于2024-08-07发布）；样本量：2000户；调查范围：宁波市10个区县市；统计口径：多项选择，比例不必相加为100%。</span></p>
 
     <h3 class="chart-title reveal">2024年报告披露：全国机构备案率42%</h3>
     <div class="stacked reveal">
       <div class="stack-fill teal" style="--sw:42%">已备案 42%</div>
       <div class="stack-rest">其余 58%</div>
     </div>
-    <p class="chart-note reveal">图18 历史管理覆盖指标。<sup>[6][18]</sup></p>
+    <p class="chart-note reveal"><b>图18｜全国托育机构备案率</b>　2024年报告披露，全国机构备案率42%，其余58%未备案。<sup>[6][18]</sup><span class="note-src">数据来源：国务院《关于推进托育服务工作情况的报告》（2024-09-10）及中国青年报报道；统计时点：2023年；统计范围：全国；统计口径：机构备案率，其余58%由100%−42%计算；行政统计，不适用抽样样本量。</span></p>
 
     <p class="sec-para reveal">信任需要可核实的信息：备案、公示收费、人员配置、卫生保健、稳定的沟通与投诉处理。监管和信息透明能减少家长判断服务的困难，但仅靠备案率，仍无法测量孩子每天获得的照护质量。</p>
   </div>
@@ -939,7 +924,6 @@
 <!-- ===== 可及性 ===== -->
 <section class="page-section">
   <div class="container narrow">
-    <p class="sec-eyebrow reveal">供需错位 / 可及性</p>
     <h2 class="sec-title reveal">县里有托育不等于家门口能托</h2>
     <p class="sec-sub reveal">一个家庭能否真正用上托育，取决于下面三个影响因素：距离、月龄和时间。</p>
 
@@ -963,7 +947,7 @@
       </div>
     </div>
 
-    <h3 class="chart-title reveal">家庭要的不只有全日托</h3>
+    <h3 class="chart-title reveal">87.88%的家庭需要全日托，三成以上还需要半日托或临时托</h3>
     <div class="bar-chart reveal">
       <div class="bar-row">
         <div class="bar-label">全日托</div>
@@ -986,20 +970,18 @@
         <div class="bar-val teal">17.46%</div>
       </div>
     </div>
-    <p class="chart-note reveal">图19 淮安2024年问卷，n＝3168；多选，图示四种服务形式。<sup>[9]</sup></p>
+    <p class="chart-note reveal"><b>图19｜家庭需要的托育服务形式</b>　87.88%选择全日托，34.06%选择半日托，32.32%选择临时托，17.46%选择计时托。<sup>[9]</sup><span class="note-src">数据来源：淮安市卫生健康委问卷结果反馈；调查时间：未披露（2024年公布）；样本量：n=3168；调查范围：淮安市；统计口径：多项选择，比例不必相加为100%。</span></p>
 
     <p class="sec-para reveal">此外，家庭托育需求的复杂性，对托育机构也是需要回应的挑战。</p>
   </div>
 </section>
 
 <!-- ===== 空间 ===== -->
-<section class="page-section alt-bg">
+<section class="page-section">
   <div class="container narrow">
-    <p class="sec-eyebrow reveal">供需错位 / 空间</p>
-    <h2 class="sec-title reveal">家门口的期待与实际送托地点</h2>
+    <h2 class="sec-title reveal">46.2%的已入托家庭，送托地点不在单位或社区附近</h2>
     <p class="sec-sub reveal">需要在哪里，托位就应尽可能建在哪里。</p>
 
-    <h3 class="chart-title reveal">近半送托地点不在家或单位附近</h3>
     <div class="scatter-map reveal">
       <svg id="dropScatter" viewBox="0 0 720 440" role="img" aria-label="实际送托地点示意图：以社区与单位为原点，散点表示送托地点分布">
         <circle cx="130" cy="130" r="88" class="zone-circle"/>
@@ -1027,7 +1009,7 @@
         <span class="lg-note">虚线圈＝就近接送范围（示意）；每点约代表1%已入托家庭</span>
       </div>
     </div>
-    <p class="chart-note reveal">图20 重庆研究表1，已入托家庭n＝3537；研究发表于2024年。为实际送托地点分布。<sup>[8]</sup></p>
+    <p class="chart-note reveal"><b>图20｜已入托家庭的实际送托地点</b>　44%在所在社区或附近，9.8%在单位或附近，46.2%不在单位或社区附近。<sup>[8]</sup><span class="note-src">数据来源：同图5重庆研究表1；调查时间：2022年项目（论文2024年发表）；样本量：已入托家庭3537户；调查范围：重庆市；统计口径：实际送托地点分布，每点约代表1%已入托家庭，虚线圈为就近接送范围示意。</span></p>
 
     <div class="cliff-chart reveal" id="cliffChart">
       <svg class="cliff-svg" viewBox="0 0 720 420" role="img" aria-label="供需悬崖图：65.3%未入托家庭希望就近送托，但仅6.15%社区建有托育设施，两者形成巨大落差">
@@ -1064,17 +1046,15 @@
       </svg>
       <div class="hw-detail" id="cliffDetail"></div>
     </div>
-    <p class="chart-note reveal">图21 已入托家庭的实际送托地点与未入托家庭的送托意愿。两数分母不同（家庭 vs 社区），并列用于呈现供需落差。<sup>[8][6][18]</sup></p>
+    <p class="chart-note reveal"><b>图21｜就近送托意愿与社区设施覆盖</b>　65.3%的未入托家庭希望就近送托，6.15%的社区建有托育设施。<sup>[8][6][18]</sup><span class="note-src">左：同图5重庆研究，分母为3332户回答具体托育需求的未入托家庭（2022年项目）；右：国务院报告援引抽样调查的社区设施覆盖率（2024-09-10）。两数分母不同（家庭 vs 社区），并列呈现落差，不作因果解释。</span></p>
   </div>
 </section>
 
-<!-- ===== 普惠如何起作用 ===== -->
-<div class="chapter-tag reveal" id="policy"><div class="container"><span>第四章</span> 普惠如何起作用</div></div>
+<!-- ===== 普惠托育政策 ===== -->
+<div class="chapter-tag reveal" id="policy"><div class="container"><span>第四章</span> 普惠托育政策</div></div>
 
 <section class="page-section">
   <div class="container narrow">
-    <p class="sec-eyebrow reveal">普惠如何起作用 / 政策</p>
-
     <h3 class="chart-title reveal">普惠托育政策发展历程</h3>
     <div class="stairs-chart reveal" id="policyStairs" aria-label="普惠托育政策阶梯，点击年份查看内容">
       <i class="stair-block" style="--h:70px" tabindex="0" role="button" data-year="2019" data-title="设置标准与管理规范出台" data-desc="先明确机构设置、照护管理与安全要求。" data-cite="25"><em>2019</em></i>
@@ -1085,13 +1065,12 @@
       <i class="stair-block" style="--h:295px" tabindex="0" role="button" data-year="2025" data-title="托育服务法草案初次审议" data-desc="法治保障推进；此为初审事件节点，非施行日期。" data-cite="27"><em>2025</em></i>
     </div>
     <div class="stair-panel reveal" id="stairPanel"></div>
-    <p class="chart-note reveal">图22 国家层面政策事件，按文件公开或审议时间排列；阶梯高度示意政策层层递进，节点间距不代表时间长度。</p>
+    <p class="chart-note reveal"><b>图22｜普惠托育政策时间轴</b>　国家层面政策事件，按文件公开或审议时间排列。<sup>[25][26][6][13][14][27]</sup><span class="note-src">根据公开政策文件整理（2019—2025）；阶梯高度仅示意政策层层递进，节点间距不代表时间长度；非调查数据。</span></p>
   </div>
 </section>
 
-<section class="page-section alt-bg">
+<section class="page-section">
   <div class="container narrow">
-    <p class="sec-eyebrow reveal">普惠如何起作用 / 价格</p>
     <h2 class="sec-title reveal">先回应“托不起”</h2>
     <p class="sec-sub reveal">收费可承受，家庭的送托意愿才可能转化为实际使用。</p>
 
@@ -1118,19 +1097,18 @@
         <b>降价后</b>
       </div>
     </div>
-    <p class="chart-note reveal">图23 金币堆高度按降幅等比示意（降价后约为降价前的71%），不代表具体金额；全国平均变化是费用端的积极信号，不能替代对各地收费水平与家庭支付能力的判断。<sup>[3]</sup></p>
+    <p class="chart-note reveal"><b>图23｜全日托平均价格变化</b>　全国全日托平均价格下降29%。<sup>[3]</sup><span class="note-src">数据来源：国家卫生健康委2025年12月26日新闻发布会；统计时点：2025年12月；统计范围：全国；统计口径：全日托平均价格降幅。金币堆按降幅等比示意（降价后约为降价前的71%），不代表具体金额；全国平均变化不能替代对各地收费水平与家庭支付能力的判断。</span></p>
   </div>
 </section>
 
 <section class="page-section" id="status">
   <div class="container narrow">
-    <p class="sec-eyebrow reveal">普惠如何起作用 / 可及性</p>
     <h2 class="sec-title reveal">再回应“托不便”：把服务送到家庭身边</h2>
     <p class="sec-sub reveal">供给既要增加，也要与居住位置、接送安排和实际照护需求相匹配。</p>
 
     <p class="sec-para reveal">2025年七部门意见提出“1+N”体系：以综合服务中心为枢纽，连接托育机构、社区嵌入式托育、幼儿园托班、用人单位办托与家庭托育点，并支持全日托、半日托、临时托、计时托等多种形式。服务更靠近家庭、时间安排更灵活，是对“托不便”的直接回应。<sup>[14]</sup></p>
 
-    <h3 class="chart-title reveal">托位总量与千人口托位数同步提升</h3>
+    <h3 class="chart-title reveal">托位从477万个增至666万个，千人口托位数升至4.73</h3>
     <div class="combo-host reveal" id="supplyCombo">
       <div class="combo-legend">
         <span class="cl-item"><i class="cl-bar-ico"></i>托位总量（万个）</span>
@@ -1138,7 +1116,7 @@
         <em class="cl-hint">悬停或点击年份节点，查看对应数值</em>
       </div>
     </div>
-    <p class="chart-note reveal">图24 条形为全国托位总数（万个，下轴），折线为每千人口托位数（个，上轴），两轴均为0起点。2023、2024为年末统计，2025为12月26日发布会披露值；千人口口径分母为总人口而非婴幼儿数，4.73约为2025年目标4.5的105.1%。<sup>[4][28][2][3][14][26]</sup></p>
+    <p class="chart-note reveal"><b>图24｜托位总量与千人口托位数</b>　托位总量477万→573.7万→666万；千人口托位数3.38→4.08→4.73。条形为托位总量（万个，下轴），折线为千人口托位数（个，上轴），两轴均为0起点。<sup>[4][5][28][2][3][14][26]</sup><span class="note-src">数据来源：国家统计局2023年、2024年《中国儿童发展纲要》统计监测报告，2024年卫生健康事业发展统计公报，国家卫生健康委2025-12-26发布会；统计时点：2023年末、2024年末、2025年12月；统计范围：全国；统计口径：托位总量与每千人口托位数，千人口分母为总人口而非婴幼儿数；4.73约为2025年目标4.5的105.1%。</span></p>
 
     <h3 class="chart-title reveal">2025年新增普惠托位超过年度目标</h3>
     <div class="bar-chart reveal">
@@ -1153,26 +1131,26 @@
         <div class="bar-val teal">超89万</div>
       </div>
     </div>
-    <p class="chart-note reveal">图25 当年新增普惠托位（万个）；以89万个作保守比较，比目标多约23万个。新增量不是普惠托位存量，也不等于新增入托人数。<sup>[3][14]</sup></p>
+    <p class="chart-note reveal"><b>图25｜2025年新增普惠托位</b>　年度目标66万个，实际披露超过89万个，以89万个作保守比较，比目标多约23万个。<sup>[3][14]</sup><span class="note-src">数据来源：国家卫生健康委2025-12-26发布会、七部门《关于加快推进普惠托育服务体系建设的意见》（2025-07-08）；统计时点：2025年；统计范围：全国；统计口径：当年新增普惠托位，不是普惠托位存量，也不等于新增入托人数。</span></p>
 
-    <h3 class="chart-title reveal">切面证据：北京各区的机构分布</h3>
-    <p class="sec-sub reveal">全国口径之外，可及性还要落在具体的城市与街区。北京市普惠性幼儿园覆盖率已达94%，全市达标；总量之外，更应追问每个区的机构是否覆盖到了家庭身边。点击地图中的区，查看该区普惠托育机构数量；颜色越深，代表该区机构越多。</p>
+    <h3 class="chart-title reveal">北京2156家普惠托育机构，如何分布在各区</h3>
+    <p class="sec-sub reveal">全国口径之外，可及性还要落在具体的城市与街区。北京市普惠托育机构共2156家（含经开区17家、燕山6家），但各区分布并不均衡。颜色越深，代表该区机构越多；点击地图中的区查看数量。</p>
     <div class="bj-map-wrap reveal">
       <div id="beijing-map" class="bj-map-container"></div>
       <div id="bj-map-info" class="bj-map-info">
         <div class="bj-info-label">普惠托育机构数量</div>
-        <div class="bj-info-name">点击各区查看</div>
+        <div class="bj-info-name">全市总量</div>
         <div class="bj-info-count">—</div>
         <div class="bj-info-unit">家</div>
       </div>
     </div>
-    <p class="chart-note reveal">图26 北京行政区划底图。全市普惠托育机构总量2156家（含经开区17家、燕山6家），普惠性幼儿园覆盖率94%。数据来源：阿里云DataV.GeoAtlas区县级GeoJSON。</p>
+    <p class="chart-note reveal"><b>图26｜北京市普惠托育机构分布</b>　全市2156家（含经开区17家、燕山6家），颜色越深代表该区机构越多。<span class="note-src">机构数量来源：现有公开资料未标注发布机构与统计时点，待核验；行政区划底图：阿里云DataV.GeoAtlas区县级GeoJSON。本图不以“普惠性幼儿园覆盖率94%”说明0—3岁托育服务覆盖率。</span></p>
+    <!-- 待核验：北京2156家普惠托育机构的发布机构、统计时点与统计口径（是否含幼儿园托班、社区嵌入式点位）。核验前不在页面展示推测值。 -->
   </div>
 </section>
 
-<section class="page-section alt-bg">
+<section class="page-section">
   <div class="container narrow">
-    <p class="sec-eyebrow reveal">普惠如何起作用 / 质量与安全</p>
     <h2 class="sec-title reveal">还要回应“不放心”</h2>
     <p class="sec-sub reveal">家长愿不愿意送托，也取决于对照护服务的信任。</p>
 
@@ -1186,9 +1164,189 @@
     <div class="care-path reveal" id="carePath">
       <div class="care-detail" id="carePanel"></div>
     </div>
-    <p class="chart-note reveal">图27 签约数量不等于安全、质量已达标；制度要求能否转化为稳定合格的照护服务，仍需下一阶段检验。<sup>[3]</sup></p>
+    <p class="chart-note reveal"><b>图27｜与医疗卫生机构签约的托育机构</b>　全国8万家托育机构与医疗卫生机构签约。<sup>[3]</sup><span class="note-src">数据来源：国家卫生健康委2025-12-26新闻发布会；统计时点：2025年12月；统计范围：全国；统计口径：签约机构数量。签约数量不等于安全、质量已达标；制度要求能否转化为稳定合格的照护服务，仍需下一阶段检验。</span></p>
   </div>
 </section>
+
+<!-- ===== 第五章 普惠效果 ===== -->
+<div class="chapter-tag reveal" id="effect-ch"><div class="container"><span>第五章</span> 普惠效果</div></div>
+
+<section class="page-section">
+  <div class="container narrow">
+    <h2 class="sec-title reveal">从政策进展，到家庭的一次选择</h2>
+    <p class="sec-sub reveal">围绕普惠托育，两种衡量成效的尺度：官方建设叙事与家庭日常体验。</p>
+    <p class="sec-para reveal">普惠托育要进入家庭生活，降价、扩容与质量保障必须在同一次送托选择中接上：收费能持续承担，月龄和时间匹配，孩子的照护值得信任。只改善其中一项，服务仍可能停在"有供给"，没有变成家庭稳定的照护安排。</p>
+  </div>
+</section>
+
+<div class="material-strip"><span><b>近三个月</b> 官方检索分析</span><span><b>969条</b> 可见笔记文本</span><span><b>3,606条</b> 非空评论</span><p></p></div>
+
+<section class="page-section" id="lens">
+  <div class="container narrow">
+<div class="prose"><h2 class="sec-title reveal">同样谈托育，人们先说起什么？</h2><p><strong>判断公共投入是否形成普惠效果，要看家庭需要自行兜底的成本有没有减少。</strong>建成机构、公布收费、制定标准，是服务运行的基础；家长真正获得的，则应是更少的支出压力、更稳定的工作与接送安排，以及不必反复寻找替代照护的日常。</p><p>图29中的两套词汇恰好指向这条传导链的两端。官方检索以普惠、机构、政策等建设性词汇组织议题；评论把孩子、老师、上班、老人放在一起，呈现服务必须适配的生活关系。后面的分析据此追问：政策改善了哪种条件，家庭还需要自行承担哪部分成本？</p></div>    <div class="chart reveal">
+      <table class="c5-rank">
+        <tr><th>官方检索共同前列词</th><th>价格</th><th>供给</th><th>质量</th></tr>
+        <tr><td>普惠</td><td><span class="c5-chip r1">1</span></td><td><span class="c5-chip r1">1</span></td><td><span class="c5-chip r1">1</span></td></tr>
+        <tr><td>机构</td><td><span class="c5-chip r1">2</span></td><td><span class="c5-chip r1">2</span></td><td><span class="c5-chip r1">2</span></td></tr>
+        <tr><td>政策</td><td><span class="c5-chip r2">4</span></td><td><span class="c5-chip r2">3</span></td><td><span class="c5-chip r2">4</span></td></tr>
+        <tr><td>家庭</td><td><span class="c5-chip r2">3</span></td><td><span class="c5-chip r3">7</span></td><td><span class="c5-chip r2">3</span></td></tr>
+        <tr><td>群众</td><td><span class="c5-chip r3">5</span></td><td><span class="c5-chip r2">4</span></td><td><span class="c5-chip r3">5</span></td></tr>
+        <tr><td>民生</td><td><span class="c5-chip r3">6</span></td><td><span class="c5-chip r3">6</span></td><td><span class="c5-chip r3">6</span></td></tr>
+      </table>
+      <p class="c5-cap">数字为各自 96 项词表内排名，颜色越深越靠前；仅表示排名顺序，统计单位未披露。</p>
+      <div class="bar-chart">
+        <div class="bar-row"><div class="bar-label">孩子</div><div class="bar-track"><div class="bar-fill teal" style="--w:100%"></div></div><div class="bar-val teal">478条 · 13.3%</div></div>
+        <div class="bar-row"><div class="bar-label">托育</div><div class="bar-track"><div class="bar-fill teal" style="--w:81.8%"></div></div><div class="bar-val teal">391条 · 10.8%</div></div>
+        <div class="bar-row"><div class="bar-label">老师</div><div class="bar-track"><div class="bar-fill teal" style="--w:47.5%"></div></div><div class="bar-val teal">227条 · 6.3%</div></div>
+        <div class="bar-row"><div class="bar-label">托班</div><div class="bar-track"><div class="bar-fill teal" style="--w:46.7%"></div></div><div class="bar-val teal">223条 · 6.2%</div></div>
+        <div class="bar-row"><div class="bar-label">上班</div><div class="bar-track"><div class="bar-fill teal" style="--w:32.6%"></div></div><div class="bar-val teal">156条 · 4.3%</div></div>
+        <div class="bar-row"><div class="bar-label">老人</div><div class="bar-track"><div class="bar-fill teal" style="--w:29.1%"></div></div><div class="bar-val teal">139条 · 3.9%</div></div>
+        <div class="bar-row"><div class="bar-label">工作</div><div class="bar-track"><div class="bar-fill teal" style="--w:24.9%"></div></div><div class="bar-val teal">119条 · 3.3%</div></div>
+        <div class="bar-row"><div class="bar-label">生病</div><div class="bar-track"><div class="bar-fill teal" style="--w:17.6%"></div></div><div class="bar-val teal">84条 · 2.3%</div></div>
+      </div>
+      <p class="c5-cap" style="margin-top:8px">评论高频词：分词后提及该词的评论条数（DF），N=3,606；条形长度按条数比例绘制。</p>
+      <p class="chart-note reveal"><b>图29｜同一话题，进入两套不同的词汇</b>　<span class="note-src">数据来源：[31]公开平台文本分析数据集。上方表格：官方检索热门主题词（价格/供给/质量三组），各自96项词表内排名，仅用排名展示，统计单位未披露。下方条形：评论高频词，分词后提及该词的评论条数（DF），有效样本N=3,606。</span></p>
+    </div>    <div class="chart reveal">
+      <p class="c5-cap">情感属性构成：三组检索各自以"中性"为主（各表数量合计为分母，不确认是独立报道篇数）</p>
+      <div class="c5-stack">
+        <div class="c5-stack-row"><span class="c5-stack-name">价格<em>合计 19,346</em></span><div class="c5-stack-bar"><i class="s-teal" style="width:19.9%"></i><i class="s-sage" style="width:79.3%"></i><i class="s-orange" style="width:0.8%"></i></div></div>
+        <div class="c5-stack-row"><span class="c5-stack-name">供给<em>合计 16,055</em></span><div class="c5-stack-bar"><i class="s-teal" style="width:20%"></i><i class="s-sage" style="width:79.2%"></i><i class="s-orange" style="width:0.8%"></i></div></div>
+        <div class="c5-stack-row"><span class="c5-stack-name">质量<em>合计 19,711</em></span><div class="c5-stack-bar"><i class="s-teal" style="width:19.6%"></i><i class="s-sage" style="width:79.7%"></i><i class="s-orange" style="width:0.7%"></i></div></div>
+        <div class="c5-stack-lbls"><span><i class="c5-dot" style="background:var(--teal)"></i>正面</span><span><i class="c5-dot" style="background:var(--sage-3)"></i>中性</span><span><i class="c5-dot" style="background:var(--orange)"></i>负面（各组均不足 1%）</span></div>
+      </div>
+      <p class="c5-cap">情绪分布表中"赞扬"的表内构成</p>
+      <div class="bar-chart">
+        <div class="bar-row"><div class="bar-label">价格（13,028 / 14,193）</div><div class="bar-track"><div class="bar-fill teal" style="--w:91.8%"></div></div><div class="bar-val teal">91.8%</div></div>
+        <div class="bar-row"><div class="bar-label">供给（10,982 / 11,986）</div><div class="bar-track"><div class="bar-fill teal" style="--w:91.6%"></div></div><div class="bar-val teal">91.6%</div></div>
+        <div class="bar-row"><div class="bar-label">质量（13,438 / 14,557）</div><div class="bar-track"><div class="bar-fill teal" style="--w:92.3%"></div></div><div class="bar-val teal">92.3%</div></div>
+      </div>
+      <p class="chart-note reveal"><b>图30｜描述建设进展，也记录积极评价</b>　<span class="note-src">数据来源：[31]公开平台文本分析数据集，官方检索情感属性与情绪分布各三组（价格/供给/质量）。各表数量合计作分母计算构成比；不确认是独立报道篇数。</span></p>
+    </div><div class="prose"><p>三组官方情感表以中性为主，情绪表又集中于赞扬。这些汇总呈现了报道的表达方式。衡量普惠效果，需要把视线继续向下移：补贴有没有变成可负担的账单，托位有没有接住需要送托的年龄段，规范有没有落实到实际在岗的人手。</p></div>
+  </div>
+</section>
+
+<section class="page-section" id="price">
+  <div class="container narrow">
+<div class="prose"><h2 class="sec-title reveal">降价要降到家庭总账里，也要有稳定的运营支撑</h2><p><strong>“普惠”首先是一套分类定价和政府支持制度，并不是全国统一的低价标签。</strong>2024年国家价格文件把保育费与伙食、材料等其他服务费分开管理，并要求公示收费目录。这意味着保育费下降，未必等于送托总支出按相同比例下降。<sup>[13]</sup></p><p>评论中的工资、收入与费用词语，提示了一种更接近家庭决策的计算方式：除了机构账单，还要计入接送、延时，以及生病或临时停托时实际发生的替代照护支出。只公布保育费，无法完整回答一个双职工家庭能否负担。</p></div>    <div class="chart reveal">
+      <p class="c5-cap">关键词字面提及的评论数／3,606 条非空评论；同一评论可含多个词；不表示嫌贵或满意</p>
+      <div class="bar-chart">
+        <div class="bar-row"><div class="bar-label">便宜</div><div class="bar-track"><div class="bar-fill orange" style="--w:100%"></div></div><div class="bar-val orange">62条 · 1.7%</div></div>
+        <div class="bar-row"><div class="bar-label">工资</div><div class="bar-track"><div class="bar-fill orange" style="--w:91.9%"></div></div><div class="bar-val orange">57条 · 1.6%</div></div>
+        <div class="bar-row"><div class="bar-label">贵</div><div class="bar-track"><div class="bar-fill orange" style="--w:87.1%"></div></div><div class="bar-val orange">54条 · 1.5%</div></div>
+        <div class="bar-row"><div class="bar-label">价格</div><div class="bar-track"><div class="bar-fill orange" style="--w:48.4%"></div></div><div class="bar-val orange">30条 · 0.8%</div></div>
+        <div class="bar-row"><div class="bar-label">费用</div><div class="bar-track"><div class="bar-fill orange" style="--w:43.5%"></div></div><div class="bar-val orange">27条 · 0.7%</div></div>
+        <div class="bar-row"><div class="bar-label">收入</div><div class="bar-track"><div class="bar-fill orange" style="--w:32.3%"></div></div><div class="bar-val orange">20条 · 0.6%</div></div>
+      </div>
+      <p class="chart-note reveal"><b>图31｜“收费”之外，工资与收入也在场</b>　<span class="note-src">数据来源：[31]公开平台文本分析数据集，评论高频词按字面匹配统计，有效样本N=3,606；同一评论可含多个词。关键词按字面出现统计。</span></p>
+    </div><div class="split reveal"><div class="receipt"><p class="eyebrow">一条笔记里的费用权衡</p><div class="receipt-number">六千左右<span>/ 三个月</span></div><p>“但是我相中一点的就是班里三个老师”</p><div class="receipt-rule"></div><small>笔记R0389中的送托费用与教师配置。</small></div>    <div class="quote reveal">
+      <p class="quote-tag">公开平台文本 · 原文节选</p>
+      <blockquote>“三个月六千左右 贵吗”</blockquote>
+      <p class="quote-meta">笔记 R0389 · 原表第389行</p>
+      <p class="quote-note">同段把收费与教师数量相联系。</p>
+      <details><summary>查看原文与定位</summary><p>有点小贵<br>家人们 听取你们的建议已经给小宝报了托班 三个月六千左右 贵吗[失望R] 但是我相中一点的就是班里三个老师 老师是会注重</p><small>来源10／逐条编码，第388行。公开平台文本节选。</small></details>
+    </div></div><div class="prose"><p>R0389一边问“三个月六千左右贵吗”，一边看重“三个老师”，显示价格和质量是在同一次选择中被权衡的。另一条评论把“蛮便宜”与腾出工作时间联系起来：如果购买照护能帮助维持就业，家庭获得的就不只是照护替班，还可能包括维持收入与职业连续性的机会。</p></div>    <div class="quote reveal">
+      <p class="quote-tag">公开平台文本 · 原文节选</p>
+      <blockquote>“还是蛮便宜的讷，这样就能腾出时间来专心工作了”</blockquote>
+      <p class="quote-meta">评论 C3410 · 2026-04-27</p>
+      <p class="quote-note">这段把价格判断与可用于工作的时间联系起来。</p>
+      <details><summary>查看原文与定位</summary><p>还是蛮便宜的讷，这样就能腾出时间来专心工作了，北京太卷了，我之前在一也北京工作过一段时间，后来嫁到成都了，觉得生活一下子就平缓下来了</p><small>来源11／逐条分析，第3410行。公开平台文本节选。</small></details>
+    </div><div class="prose"><p>但低价也需要有人承担成本。2024年国务院报告指出，托育机构房租和人工占总收入的75%以上。2025年七部门意见把场地费用减免和有条件的运营补助列为支持措施。两者连起来看，<strong>公共支持必须进入持续运营，才能减少“降价靠压缩服务”或“低价难以持续”的风险。</strong><sup>[6]</sup><sup>[14]</sup></p><p class="takeaway reveal"><span>价格结论</span>判断降价有没有用，要同时看家庭完整账单是否减轻、机构能否维持合格人手与稳定服务。便宜但接送成本高、频繁停托或质量难以信任，仍可能让家庭用不起。</p></div>
+  </div>
+</section>
+
+<section class="page-section" id="supply">
+  <div class="container narrow">
+<div class="prose"><h2 class="sec-title reveal">月龄与时段不匹配，空着的托位也难接住需求</h2><p><strong>供给短缺既可能是数量不足，也可能是建好的服务不适合需要它的人。</strong>2024年国务院报告记录，2023年全国托位实际使用率为46.7%，并指出部分地方按人口分布和家庭需求配置不足，出现资源错配。空位与送托难同时存在，说明继续增加总量之外，还要调整供给结构。<sup>[6]</sup></p><p>评论C0011问“三个月能送吗”“晚上七八点下班能晚接吗”，同时触及两种结构性条件：机构是否接收更低月龄，以及服务时间能否覆盖工作和通勤。对白天有工作、晚上仍无法按时接走孩子的家庭，一张托位并没有自动结束照护接力。</p></div>    <div class="quote reveal">
+      <p class="quote-tag">公开平台文本 · 原文节选</p>
+      <blockquote>“想问一下三个月能送吗？晚上七八点下班的怎么办？能晚接吗？”</blockquote>
+      <p class="quote-meta">评论 C0011 · 2026-08-16</p>
+      <p class="quote-note">月龄接收与延时服务需求在同一询问中出现。</p>
+      <details><summary>查看原文与定位</summary><p>想问一下三个月能送吗？晚上七八点下班的怎么办？能晚接吗？</p><small>来源11／逐条分析，第11行。公开平台文本节选。</small></details>
+    </div>    <div class="chart reveal">
+      <svg class="c5-svg" viewBox="0 0 720 300" role="img" aria-label="笔记议题提及率：全部笔记与家庭叙述候选两个口径的对比，均为多标签"><line class="gridln" x1="200.0" y1="28" x2="200.0" y2="256"/><text class="t-axis" x="200.0" y="274">0%</text><line class="gridln" x1="290.0" y1="28" x2="290.0" y2="256"/><text class="t-axis" x="290.0" y="274">25%</text><line class="gridln" x1="380.0" y1="28" x2="380.0" y2="256"/><text class="t-axis" x="380.0" y="274">50%</text><line class="gridln" x1="470.0" y1="28" x2="470.0" y2="256"/><text class="t-axis" x="470.0" y="274">75%</text><line class="gridln" x1="560.0" y1="28" x2="560.0" y2="256"/><text class="t-axis" x="560.0" y="274">100%</text><text class="t-lbl" x="8" y="50">可及性与机构选择</text><line class="conn" x1="364.2" y1="46" x2="440.5" y2="46"/><circle class="dot-full" cx="364.2" cy="46" r="5.5"/><circle class="dot-fam" cx="440.5" cy="46" r="6.5"/><text class="t-val" x="575" y="50">177/265 · 66.8%</text><text class="t-lbl" x="8" y="88">低月龄接收</text><line class="conn" x1="398.4" y1="84" x2="424.3" y2="84"/><circle class="dot-full" cx="398.4" cy="84" r="5.5"/><circle class="dot-fam" cx="424.3" cy="84" r="6.5"/><text class="t-val" x="575" y="88">165/265 · 62.3%</text><text class="t-lbl" x="8" y="126">家庭照护与工作衔接</text><line class="conn" x1="282.8" y1="122" x2="301.9" y2="122"/><circle class="dot-full" cx="282.8" cy="122" r="5.5"/><circle class="dot-fam" cx="301.9" cy="122" r="6.5"/><text class="t-val" x="575" y="126">75/265 · 28.3%</text><text class="t-lbl" x="8" y="164">安全健康与信任</text><line class="conn" x1="243.6" y1="160" x2="258.3" y2="160"/><circle class="dot-full" cx="243.6" cy="160" r="5.5"/><circle class="dot-fam" cx="258.3" cy="160" r="6.5"/><text class="t-val" x="575" y="164">43/265 · 16.2%</text><text class="t-lbl" x="8" y="202">适应与分离情绪</text><line class="conn" x1="263.0" y1="198" x2="272.0" y2="198"/><circle class="dot-full" cx="263.0" cy="198" r="5.5"/><circle class="dot-fam" cx="272.0" cy="198" r="6.5"/><text class="t-val" x="575" y="202">53/265 · 20.0%</text><text class="t-lbl" x="8" y="240">费用与可负担性</text><line class="conn" x1="222.0" y1="236" x2="229.9" y2="236"/><circle class="dot-full" cx="222.0" cy="236" r="5.5"/><circle class="dot-fam" cx="229.9" cy="236" r="6.5"/><text class="t-val" x="575" y="240">22/265 · 8.3%</text><circle class="dot-full" cx="212" cy="292" r="5.5"/><text class="t-leg" x="224" y="296">全部笔记 N=969</text><circle class="dot-fam" cx="352" cy="292" r="6.5"/><text class="t-leg" x="364" y="296">家庭叙述与求助候选 N=265</text></svg>
+      <p class="chart-note reveal"><b>图32｜一个托位，还需要匹配多少条件？</b>　<span class="note-src">数据来源：[31]公开平台文本分析数据集，笔记内容分析报告。规则编码后多标签提及率；本图展示家庭叙述与求助候选265条中各项的提及比例。全样本969条、显性亲历候选53条的对应比例可在原始数据集查看。"可及性与机构选择"包括入托、招生等讨论。</span></p>
+    </div><div class="prose"><p>低月龄问题尤其不能被“托幼一体化”笼统替代。2024年国家价格文件明确，公办幼儿园和普惠性民办幼儿园开设的托班按规定招收2—3岁幼儿。利用幼儿园既有资源扩容有现实价值，但<strong>面向2—3岁的新增服务，不能自动补上几个月大婴儿的照护缺口。</strong><sup>[13]</sup></p><p>时段也一样。2025年七部门意见布局社区嵌入式、单位办托、家庭托育点等网络，并支持全日托、半日托、临时托、计时托。其意义不只是增加机构类型，更是让家庭有机会按位置与实际缺口组合服务。由此，本章建议：新增托位统计应同时交代接收月龄、服务时段和位置，延时等服务还应说明额外收费。<sup>[14]</sup></p><p class="takeaway reveal"><span>供给结论</span>评估供给不能只数空位和新增量，还要看有需求的年龄段是否能被接收、服务是否覆盖接送所需时间。低月龄与工作衔接在这批笔记中反复同现，值得纳入服务配置的重点。</p></div>
+  </div>
+</section>
+
+<section class="page-section" id="quality">
+  <div class="container narrow">
+<div class="prose"><h2 class="sec-title reveal">信任要靠可核实的照护过程，不能只靠“专业”与“放心”的承诺</h2><p><strong>婴幼儿难以清楚表达自己的经历，家长也无法全天在场，照护质量因此存在明显的信息差。</strong>园所环境和宣传可以在参观时看见，但是否及时喂养、孩子不适时如何回应、人手能否在忙碌时段保持充足，都要在日常运行中验证。降低家长判断这些事情的成本，是质量政策能否起作用的一部分。</p><p>C0007把生病和大人请假连在一起，说明健康担忧也涉及服务的连续性：孩子需要临时在家时，谁接手、家长是否需要停工？即使照护服务总体有帮助，这类突发安排仍可能把额外的时间与工作成本留给家庭。</p></div>    <div class="quote reveal">
+      <p class="quote-tag">公开平台文本 · 原文节选</p>
+      <blockquote>“姐妹，请问生病的次数多吗？我就害怕宝宝生病怎么办，大人是不是要频繁请假呢”</blockquote>
+      <p class="quote-meta">评论 C0007 · 2026-09-04</p>
+      <p class="quote-note">这段担忧同时涉及孩子健康与父母请假。</p>
+      <details><summary>查看原文与定位</summary><p>姐妹，请问生病的次数多吗？我就害怕宝宝生病怎么办，大人是不是要频繁请假呢</p><small>来源11／逐条分析，第7行。公开平台文本节选。</small></details>
+    </div>    <div class="chart reveal">
+      <p class="c5-cap">多标签情绪词线索，条形长度为评论条数；正向词为绿色，负向词为橙色</p>
+      <div class="bar-chart">
+        <div class="bar-row"><div class="bar-label">担忧</div><div class="bar-track"><div class="bar-fill orange" style="--w:100%"></div></div><div class="bar-val orange">184条 · 5.1%</div></div>
+        <div class="bar-row"><div class="bar-label">开心</div><div class="bar-track"><div class="bar-fill teal" style="--w:92.9%"></div></div><div class="bar-val teal">171条 · 4.7%</div></div>
+        <div class="bar-row"><div class="bar-label">不满</div><div class="bar-track"><div class="bar-fill orange" style="--w:89.7%"></div></div><div class="bar-val orange">165条 · 4.6%</div></div>
+        <div class="bar-row"><div class="bar-label">安心</div><div class="bar-track"><div class="bar-fill teal" style="--w:61.4%"></div></div><div class="bar-val teal">113条 · 3.1%</div></div>
+        <div class="bar-row"><div class="bar-label">难过</div><div class="bar-track"><div class="bar-fill orange" style="--w:43.5%"></div></div><div class="bar-val orange">80条 · 2.2%</div></div>
+        <div class="bar-row"><div class="bar-label">感谢</div><div class="bar-track"><div class="bar-fill teal" style="--w:17.4%"></div></div><div class="bar-val teal">32条 · 0.9%</div></div>
+        <div class="bar-row"><div class="bar-label">羡慕</div><div class="bar-track"><div class="bar-fill teal" style="--w:16.3%"></div></div><div class="bar-val teal">30条 · 0.8%</div></div>
+        <div class="bar-row"><div class="bar-label">生气</div><div class="bar-track"><div class="bar-fill orange" style="--w:0.5%"></div></div><div class="bar-val orange">1条 · 0.03%</div></div>
+      </div>
+      <div class="unknown"><strong>2,933 / 3,606 · 81.3%</strong><span>未识别明确情绪，未画入上方八类词线索。它们仍计入比例分母。</span></div>
+      <p class="chart-note reveal"><b>图33｜看见情绪，也看见无法识别的部分</b>　<span class="note-src">数据来源：[31]公开平台文本分析数据集，评论情绪分布。多标签；按情绪词典识别评论表达；清洗后仅表情或符号的评论仍保留。本图展示全部3,606条非空评论的情绪词线索；内容+时间去重后N=3,053，比例差异不大。下方"2,933/3,606 · 81.3%"为未识别明确情绪的评论占比。</span></p>
+    </div><div class="prose"><p>具体标准比笼统承诺更能提供判断依据。国家2025—2027年质量提升行动要求，6—12个月乳儿班保育人员与婴幼儿按1:3配备，12—24个月按1:5，24—36个月按1:7，并要求落实日常反馈。相同数量的孩子，月龄越低，所需照护人手越密集；低月龄扩容必须把人手和照护能力一起补上。<sup>[29]</sup></p><p>因此，R0389看重“三个老师”，还需要继续核实三个信息：他们同时照护多少名孩子、孩子分别多大、一天中是否都实际在岗。评价质量应落到可查的人数配比、喂养与睡眠反馈、异常情况通知和投诉处理。监控可以补充观察，却不能代替这些日常责任。</p></div>    <div class="quote reveal">
+      <p class="quote-tag">公开平台文本 · 原文节选</p>
+      <blockquote>“想托育，但是担心孩子的需求不能第一时间得到满足，也怕遇到心坏的老师欺负她，毕竟她连话都不会说，又没条件辞职自己带”</blockquote>
+      <p class="quote-meta">评论 C2789 · 2026-06-04</p>
+      <p class="quote-note">对照护回应的担忧，与无法辞职的现实交织在一起。</p>
+      <details><summary>查看原文与定位</summary><p>想托育，但是担心孩子的需求不能第一时间得到满足，也怕遇到心坏的老师欺负她，毕竟她连话都不会说，又没条件辞职自己带，所以只能求助双方老人各带一段时间，老人讨厌我们，我们也烦老人，彼此忍耐着过日子[笑哭R]</p><small>来源11／逐条分析，第2789行。公开平台文本节选。</small></details>
+    </div><div class="prose"><p class="takeaway reveal"><span>质量结论</span>让家长放心，关键在于降低信息不对称：配比看实际在岗，照护看连续记录，异常看及时回应。只有这些过程能够被核实，质量保障才可能从制度要求转化为持续使用的信任。</p></div>
+  </div>
+</section>
+
+<section class="page-section" id="voices">
+  <div class="container narrow">
+<div class="prose"><h2 class="sec-title reveal">有顾虑仍然送托，获得感也可能逐步形成</h2><p><strong>家庭并不一定等到所有顾虑消失才决定送托。</strong>当工作不能中断、老人难以持续接班、保姆又未必合适时，家长可能是在几种各有代价的安排之间寻找更可行的一种。表达担忧、继续使用服务和后来给予好评，可以发生在同一段经历里。</p><p>态度图中的“中立”因而不能被读成用户没有明确感受。它既装着问地点、问价格等信息性回复，也装着正负词数量持平的复杂经验。要判断政策有没有帮助，需要看服务改变了哪些安排，而非仅凭评论属于哪种情感颜色。</p></div>    <div class="chart reveal">
+      <p class="c5-cap">3,606 条非空评论的规则分类（按正负向词种数比较，非政策支持率）</p>
+      <div class="c5-stack">
+        <div class="c5-stack-bar"><i class="s-teal" style="width:12.8%"></i><i class="s-orange" style="width:11%"></i><i class="s-sage" style="width:76.2%"></i></div>
+        <div class="c5-stack-lbls"><span><i class="c5-dot" style="background:var(--teal)"></i>积极 <b>462条 · 12.8%</b></span><span><i class="c5-dot" style="background:var(--orange)"></i>消极 <b>398条 · 11.0%</b></span><span><i class="c5-dot" style="background:var(--sage-3)"></i>中立 <b>2,746条 · 76.2%</b></span></div>
+      </div>
+      <p class="c5-cap">拆开 2,746 条"中立"</p>
+      <div class="c5-stack">
+        <div class="c5-stack-bar"><i class="s-sage2" style="width:97.6%"></i><i class="s-orange" style="width:2.4%"></i></div>
+        <div class="c5-stack-lbls"><span><i class="c5-dot" style="background:var(--sage-2)"></i>未检出倾向词 <b>2,680条 · 占中立 97.6%</b></span><span><i class="c5-dot" style="background:var(--orange)"></i>正负词种数持平 <b>66条 · 2.4%</b></span></div>
+      </div>
+      <p class="chart-note reveal"><b>图34｜不能把“中立”读成“没有意见”</b>　<span class="note-src">数据来源：[31]公开平台文本分析数据集，评论态度分布。态度按正负向词种数比较；"中立"包含未检出倾向词和正负持平两类；标签呈现评论整体表达倾向，非政策支持率。</span></p>
+    </div><div class="prose"><p>C0457从“刚开始也焦虑”转向“一周以后太香了”。原分析因正负词持平而给出中立标签，整句却呈现了一次明确的评价转向。<strong>把顾虑直接读作反对，会漏掉用户对服务帮助的认可；只保留后来的好评，又会抹去家庭尝试服务时承担的不确定性。</strong></p></div>    <div class="quote reveal">
+      <p class="quote-tag">公开平台文本 · 原文节选</p>
+      <blockquote>“我刚开始也焦虑，一周以后太香了”</blockquote>
+      <p class="quote-meta">评论 C0457 · 2026-04-08</p>
+      <p class="quote-note">原规则标签：中立（正负词种数持平）。</p>
+      <details><summary>查看原文与定位</summary><p>我刚开始也焦虑，一周以后太香了[捂脸R]，比我婆婆过来省事多了</p><small>来源11／逐条分析，第457行。公开平台文本节选。</small></details>
+    </div><div class="prose"><p>C3375所描述的收益更具体：孩子愿意去托班，成人白天得以恢复精力。对这个案例而言，服务的价值是让照护不必始终压在同一个人身上，而不只是完成了入托登记。</p></div>    <div class="quote reveal">
+      <p class="quote-tag">公开平台文本 · 原文节选</p>
+      <blockquote>“我女儿五个半月去的托育，现在15个月了，每天开开心心去托班，老母亲白天也是神清气爽。”</blockquote>
+      <p class="quote-meta">评论 C3375 · 2026-05-27</p>
+      <p class="quote-note">自述收益同时涉及孩子适应与母亲精力恢复。</p>
+      <details><summary>查看原文与定位</summary><p>我女儿五个半月去的托育，现在15个月了，每天开开心心去托班，老母亲白天也是神清气爽。[大笑R]</p><small>来源11／逐条分析，第3375行。公开平台文本节选。</small></details>
+    </div><div class="prose"><p>但替代部分照护劳动，不代表育儿压力会整体消失。Hong等2022年发表的横断面研究覆盖10省12城市、3,842名家长，未发现使用非父母照护与育儿压力总分存在显著差异。研究涵盖多种非父母照护安排，提示我们：节省照护时间与减轻心理压力，需要分别观察。<sup>[16]</sup></p></div>
+  </div>
+</section>
+
+<section class="page-section" id="ending">
+  <div class="container narrow">
+<div class="prose"><h2 class="sec-title reveal">普惠效果要看：家庭少承担了多少兜底成本</h2><p><strong>综合图表、案例和政策原文，本章认为，普惠托育下一阶段需要更重视服务的适配和连续性。</strong>家庭得到的帮助，来自完整账单能够承担、需要的月龄和时段有服务、实际照护质量可以核实。任何一环仍要家庭长期另找人手、额外花钱或频繁停工，政策的生活收益就可能被削弱。</p></div>    <div class="chart reveal">
+      <div class="c5-cards">
+        <div class="c5-card"><h4>价格</h4><p class="q">能持续承担吗？</p><p>托费、附加支出与预算</p></div>
+        <div class="c5-card"><h4>供给</h4><p class="q">能实际使用吗？</p><p>月龄、地点与服务时间</p></div>
+        <div class="c5-card"><h4>质量</h4><p class="q">能稳定信任吗？</p><p>照护过程、沟通与回应</p></div>
+      </div>
+      <div class="c5-arrow">↓ ↓ ↓</div>
+      <div class="c5-band">家庭是否多了一种可持续的照护安排？</div>
+      <p class="chart-note reveal"><b>图35｜成效，最终还要落在可使用的选择上</b>　<span class="note-src">普惠效果的家庭评价框架，非转化漏斗。参考[30]中央财政示范项目绩效指标（2岁以下托位占比、价格收入比、实际使用率、入托家庭满意度）构建。</span></p>
+    </div><div class="prose"><p>这并非另设一套脱离政策的标准。中央财政2024年示范项目的绩效申报框架，已经把2岁以下托位占比、托育价格与收入的比重、托位实际使用率和入托家庭服务满意度列入指标。问题在于，新闻中的建设进展，还应继续追踪到这些使用结果，而不能以新增托位数结束叙事。<sup>[30]</sup></p><p>沿着这一框架，下面四类结果值得持续公开和追踪。前两类检验家庭能否进入服务，后两类检验服务能否稳定承担照护。</p><div class="evaluation reveal"><table><thead><tr><th>评价维度</th><th>值得追踪的结果</th></tr></thead><tbody><tr><td>家庭负担</td><td>保育费和实际附加支出，以及它们占家庭可支配收入的比重。</td></tr><tr><td>供给适配</td><td>按月龄、位置和服务时段分组的实际使用情况，尤其是低月龄接收与工作衔接。</td></tr><tr><td>照护质量</td><td>实际在岗配比、异常响应、投诉处理与服务中断情况。</td></tr><tr><td>持续获得感</td><td>家庭是否能够稳定使用，退出的原因，以及工作与照护接力是否更容易安排。</td></tr></tbody></table></div><p class="last-line reveal">普惠的落点，是让家庭<br>不用反复为照护重新找出路。</p></div>
+  </div>
+</section>
+
+<!-- 本章数据与方法详见正文；图表数据来自来源[24]及补充政策文件[29][30]。用户声音为公开平台匿名节选，保留记录ID。 -->
 
 <section class="page-section">
   <div class="container narrow">
@@ -1237,7 +1395,7 @@
       </svg>
       <div class="hw-detail" id="vsDetail"></div>
     </div>
-    <p class="chart-note reveal">图28 左侧为2025年披露的阶段进展，右侧为依据2030年政策愿景整理的方向，不是已完成结果。<sup>[3][14]</sup></p>
+    <p class="chart-note reveal"><b>图28｜从阶段进展到2030年方向</b>　左侧为2025年披露的阶段进展，右侧为依据2030年政策愿景整理的方向。<sup>[3][14]</sup><span class="note-src">数据来源：国家卫生健康委2025-12-26发布会、七部门《关于加快推进普惠托育服务体系建设的意见》（2025-07-08）；统计口径：左侧为已完成进展，右侧为政策方向，不是已完成结果。</span></p>
 
     <div class="closing reveal">
       <p>到2030年基本建立普惠托育服务体系，是政策写下的目标。<sup>[14]</sup> 对黄伶俐这样的家庭来说，真正的进步是：当工作与照护发生冲突时，不必只在放弃工作、老人顶上与暂时分离之间选择。</p>
@@ -1249,14 +1407,19 @@
 <!-- ===== 资料与方法 ===== -->
 <div class="chapter-tag reveal" id="method"><div class="container"><span>附录</span> 资料与方法</div></div>
 
+<!-- 待人工核验清单（仅代码侧，不在页面展示）
+     1. 图1、图2：2017年王晖文章转述的2016年调查，需核实有效样本量、抽样地区与75.5%对应的子群体分母。
+     2. 图4、图5：宁波市调查的实际采样起止时间（现有公开信息仅有2024-08-07发布日期）。
+     3. 图9：实际月费2,351.8元与可接受月费1,607.4元各自的子样本分母。
+     4. 图26：北京2156家普惠托育机构的发布机构、统计时点，以及是否包含幼儿园托班、社区嵌入式点位。
+-->
 <!-- ===== 来源索引 ===== -->
-<section class="page-section alt-bg" id="sources">
+<section class="page-section" id="sources">
   <div class="container">
-    <p class="sec-eyebrow reveal">附录 资料与方法</p>
     <h2 class="sec-title reveal">来源索引</h2>
-    <p class="sec-sub reveal">正文编号对应下列资料，共28项；新增研究与地方调查的样本边界，详见正文图注。</p>
+    <p class="sec-sub reveal">正文编号对应下列资料，共31项；调查样本、时间与统计口径详见各图图注。</p>
 
-    <h3 class="src-group reveal">来源索引 1（01—10）</h3>
+    <h3 class="src-group reveal">01—10</h3>
     <div class="src-list reveal">
       <div class="src-item"><span class="src-no">01</span><div><b>人民日报／人民网</b>｜从“托有难题”到“幼有优育”<small>2025-08-02；黄伶俐家庭案例。</small></div></div>
       <div class="src-item"><span class="src-no">02</span><div><b>新华社／晋城市政府转载</b>｜我国共有托位666万个 让更多家庭放心托、安心托<small>2026-09-09；截至2025年底供给。</small></div></div>
@@ -1270,7 +1433,7 @@
       <div class="src-item"><span class="src-no">10</span><div><b>国家卫生健康委</b>｜关于开展全国托育服务质量提升行动的通知<small>2025-05-13；行动期2025—2027年。</small></div></div>
     </div>
 
-    <h3 class="src-group reveal">来源索引 2（11—18）</h3>
+    <h3 class="src-group reveal">11—18</h3>
     <div class="src-list reveal">
       <div class="src-item"><span class="src-no">11</span><div><b>人民日报／宁夏党委社会工作部转载</b>｜我国托育服务县级覆盖率达98.8%<small>2026-09-10；2025年末县级覆盖率。</small></div></div>
       <div class="src-item"><span class="src-no">12</span><div><b>国务院办公厅</b>｜关于促进3岁以下婴幼儿照护服务发展的指导意见<small>2019-05-09发布；国办发〔2019〕15号。</small></div></div>
@@ -1282,7 +1445,7 @@
       <div class="src-item"><span class="src-no">18</span><div><b>中国青年网／中国青年报</b>｜全国实际入托率仅7.86%！国务院报告：托育服务供给不足、缺乏支持<small>2024-09-10；核对国务院报告社区覆盖率与机构备案率。</small></div></div>
     </div>
 
-    <h3 class="src-group reveal">来源索引 3（19—24，本次增补）</h3>
+    <h3 class="src-group reveal">19—24</h3>
     <div class="src-list reveal">
       <div class="src-item"><span class="src-no">19</span><div><b>国家卫生健康委</b>｜婴幼儿营养喂养评估服务指南（试行）<small>2025-02-08公开；文件落款2024-11-27。三餐、加餐与分月龄评估要求。</small></div></div>
       <div class="src-item"><span class="src-no">20</span><div><b>WHO</b>｜5岁以下儿童身体活动、久坐行为和睡眠指南<small>2019-04-24。1—2岁：11—14小时睡眠、至少180分钟活动，均为全天建议。</small></div></div>
@@ -1292,12 +1455,19 @@
       <div class="src-item"><span class="src-no">24</span><div><b>用户提供</b>｜普惠托育相关帖子目录.xlsx<small>1867条检索记录。两条节选对应原始Excel第438、14行；未核验账号身份。</small></div></div>
     </div>
 
-    <h3 class="src-group reveal">来源索引 4（25—28，普惠成效增补）</h3>
+    <h3 class="src-group reveal">25—28</h3>
     <div class="src-list reveal">
       <div class="src-item"><span class="src-no">25</span><div><b>国家卫生健康委</b>｜托育机构设置标准（试行）、托育机构管理规范（试行）<small>2019-10-14公开；国卫人口发〔2019〕58号。机构设置、照护管理与安全要求。</small></div></div>
       <div class="src-item"><span class="src-no">26</span><div><b>国家卫生健康委</b>｜千人口托位数年度分解指标通知<small>2021-07-21；落实“十四五”到2025年4.5个/千人口的目标。</small></div></div>
       <div class="src-item"><span class="src-no">27</span><div><b>全国人大常委会</b>｜十四届全国人大常委会第十九次会议<small>讲话2025-12-27，网页2026-01-05；托育服务法草案初次审议，仅表述该事件。</small></div></div>
       <div class="src-item"><span class="src-no">28</span><div><b>国家卫生健康委</b>｜2024年我国卫生健康事业发展统计公报<small>2025-12-02；PDF第26页：2024年末573.7万托位、4.08个/千人口、262.6万入托婴幼儿。</small></div></div>
+    </div>
+
+    <h3 class="src-group reveal">29—31</h3>
+    <div class="src-list reveal">
+      <div class="src-item"><span class="src-no">29</span><div><b>国家卫生健康委</b>｜关于开展全国托育服务质量提升行动（2025—2027年）的通知<small>2025-05公开；附件规范保育服务第5项人员配比、第10项日常反馈与家园共育；6—12月龄1:3、12—24月龄1:5、24—36月龄1:7。</small></div></div>
+      <div class="src-item"><span class="src-no">30</span><div><b>国家卫生健康委／中央财政示范项目</b>｜中央财政支持普惠托育服务发展示范项目实施方案编制提纲及绩效目标申报表<small>2024年申报附件；PDF第6页，绩效指标4、6、11、12：2岁以下托位占比、价格收入比、实际使用率、满意度。</small></div></div>
+      <div class="src-item"><span class="src-no">31</span><div><b>公开平台文本分析数据集</b>｜11份Excel：价格/供给/质量三组官方检索各3份、笔记内容分析报告、评论高频词情绪态度分析<small>笔记原始977条→有效969条（排除3空+5重复）；评论原始3620条→有效3606条（排除14空）；时间范围2024-06-06至2026-10-20。见本章图29—36。</small></div></div>
     </div>
   </div>
 </section>
@@ -1312,7 +1482,7 @@
   </div>
 </footer>
 
-<script src="main.js?v=20261009"></script>
+<script src="main.js?v=20261027i"></script>
 <script src="beijing-map.js?v=20261009"></script>
 </body>
 </html>
